@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --blue-accent: #0165FF;
+
+  --green-icon: #47BF7C;
+  --blue-icon: var(--blue-accent);
+  --gray-icon: #6B778C;
+  --icon-bg: #F4F5F7;
+
+  --main-bg: #FFFFFF;
+  --secondary-bg: #F4F5F7;
+
+  --headline-text: #242325;
+
+  --message-text: #6B778C;
+}
