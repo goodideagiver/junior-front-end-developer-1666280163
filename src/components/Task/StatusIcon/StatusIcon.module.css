@@ -1,0 +1,27 @@
+.root {
+  background-color: var(--icon-bg);
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  padding: 4px;
+}
+
+.root span {
+  display: grid;
+  place-items: center;
+}
+
+.root * {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+.green {
+  color: var(--green-icon);
+}
+
+.blue {
+  color: var(--main-bg);
+  background-color: var(--blue-accent);
+}

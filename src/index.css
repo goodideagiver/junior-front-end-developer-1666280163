@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--secondary-bg);
 }
 
 code {
@@ -13,17 +21,22 @@ code {
 }
 
 :root {
+  --main-bg: #FFFFFF;
+  --secondary-bg: #F4F5F7;
+  --main-text: #6B778C;
+  --headline-text: #242325;
+
   --blue-accent: #0165FF;
 
   --green-icon: #47BF7C;
   --blue-icon: var(--blue-accent);
   --gray-icon: #6B778C;
-  --icon-bg: #F4F5F7;
 
-  --main-bg: #FFFFFF;
-  --secondary-bg: #F4F5F7;
+  --icon-bg: var(--secondary-bg);
+}
 
-  --headline-text: #242325;
-
-  --message-text: #6B778C;
+.main-card {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.157) 0 3px 0;
+  background-color: var(--main-bg);
 }

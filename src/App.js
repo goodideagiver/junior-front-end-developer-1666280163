@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { TaskList } from './components/TaskList/TaskList'
+import { taskStatuses } from './components/TaskList/taskStatuses'
+import './App.css'
+
+const DUMMY_TASKS = [
+  {
+    status: taskStatuses.green,
+    title: 'Task 1',
+    id: 'dasdasd23f',
+    businessContexts: ['businessContext1', 'businessContext2'],
+  },
+  {
+    status: taskStatuses.blue,
+    title: 'Task 2',
+    id: 'd32q2d',
+    businessContexts: ['businessContext1', 'businessContext2'],
+  },
+  {
+    status: taskStatuses.gray,
+    title: 'Task 3',
+    id: 'sdfh789',
+    businessContexts: ['businessContext1', 'businessContext2'],
+  },
+  {
+    status: taskStatuses.hidden,
+    title: 'Task 4',
+    id: 'sdf89',
+    businessContexts: ['businessContext1', 'businessContext2'],
+  },
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <TaskList tasks={DUMMY_TASKS} />
 }
 
-export default App;
+export default App
